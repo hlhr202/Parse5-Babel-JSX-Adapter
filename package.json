@@ -31,6 +31,11 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/hlhr202/Parse5-Babel-JSX-Adapter"
+  },
+  "homepage": "https://github.com/hlhr202/Parse5-Babel-JSX-Adapter",
   "name": "parse5-babel-jsx-adapter",
   "author": "hlhr202@163.com",
   "module": "dist/parse5-babel-jsx-adapter.esm.js",
