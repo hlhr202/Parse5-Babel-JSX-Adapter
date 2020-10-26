@@ -1,0 +1,59 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "parse5-babel-jsx-adapter",
+  "author": "hlhr202@163.com",
+  "module": "dist/parse5-babel-jsx-adapter.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/parse5-babel-jsx-adapter.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/parse5-babel-jsx-adapter.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@size-limit/preset-small-lib": "^4.6.2",
+    "@types/babel__core": "^7.1.10",
+    "@types/parse5": "^5.0.3",
+    "husky": "^4.3.0",
+    "parse5": "^6.0.1",
+    "size-limit": "^4.6.2",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.0.3",
+    "typescript": "^4.0.3"
+  }
+}
